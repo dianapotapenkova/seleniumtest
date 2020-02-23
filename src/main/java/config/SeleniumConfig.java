@@ -3,6 +3,7 @@ package config;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -12,13 +13,9 @@ public class SeleniumConfig {
     private WebDriver driver;
 
     public SeleniumConfig() {
-        driver = new ChromeDriver();
+        driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.manage().window().fullscreen();
-    }
-
-    static {
-        System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
+        driver.manage().window().maximize();
     }
 
     public void close() {
