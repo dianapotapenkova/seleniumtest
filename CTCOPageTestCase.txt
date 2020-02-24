@@ -1,0 +1,7 @@
+Open ctco page
+Click Careers
+Wait until Vakancies is clickable
+Click Vacancies
+Click Test Automation Engineer
+Wait until job description is displayed
+Check necessary professional skills and qualification

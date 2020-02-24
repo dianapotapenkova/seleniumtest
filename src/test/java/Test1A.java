@@ -1,9 +1,7 @@
 import config.SeleniumConfig;
-import models.BaeldungAbout;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import pages.BaeldungHomePage;
 import pages.HomePage1A;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
