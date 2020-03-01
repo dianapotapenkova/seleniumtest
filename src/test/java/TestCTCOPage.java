@@ -27,8 +27,9 @@ public class TestCTCOPage {
     public void testAutomationEngineerJobDescription(){
         config.getDriver().get("https://ctco.lv/");
         ctcoPage
-                .clickCareers()
-                .clickVacancies()
+                .selectVacancies()
+                //.clickCareers()
+                //.clickVacancies()
                 .clickOptionTestAutomationEngineer();
         assertTrue(ctcoPage.getTextFromSkills().contains("Good level in English"));
         assertTrue(ctcoPage.getTextFromSkills().contains("Team player with good analytical and communication skills"));
