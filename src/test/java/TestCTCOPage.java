@@ -24,18 +24,14 @@ public class TestCTCOPage {
     }
 
     @Test
-    public void testAutomationEngineerJobDescription(){
+    public void testAutomationEngineerJobDescription() {
         config.getDriver().get("https://ctco.lv/");
         ctcoPage
                 .selectVacancies()
-                //.clickCareers()
-                //.clickVacancies()
                 .clickOptionTestAutomationEngineer();
         assertTrue(ctcoPage.getTextFromSkills().contains("Good level in English"));
         assertTrue(ctcoPage.getTextFromSkills().contains("Team player with good analytical and communication skills"));
         assertTrue(ctcoPage.getTextFromSkills().contains("Experience with automated testing tools and frameworks"));
 
     }
-
 }
-
