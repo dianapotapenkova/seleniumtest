@@ -17,6 +17,9 @@ public class SeleniumConfig {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }
+    static {
+        System.setProperty("webdriver.gecko.driver", "C:\\SRDEV\\geckodriver-v0.26.0-win64\\geckodriver.exe");
+    }
 
     public void close() {
         driver.close();
